@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taskmaster</title>
+</head>
+<body>
+    {% include "header.html" %}
+    <div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img
+        src="static/assets/img/img.png"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Bootstrap Themes"
+        width="800"
+        height="700"
+        loading="lazy"
+      >
+    </div>
+
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        Welcome to Taskmaster!
+      </h1>
+
+      <p class="lead">
+        Stay organized, boost productivity, and never miss a deadline with our simple yet powerful
+        to-do list manager. Whether you're tackling daily chores, work projects, or personal goals,
+        TaskMaster helps you prioritize tasks, set reminders, and track progress—all in one place.
+        Sign up now and take control of your time effortlessly!
+      </p>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="{{ url_for('create_post') }}" class="btn btn-primary btn-lg px-4" style="background-color: green; border-color: green;">
+          My Todo List
+        </a>
+        <a href="{{ url_for('about_us') }}" class="btn btn-outline-secondary btn-lg px-4">
+          About Us
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    {% include "footer.html" %}
+</body>
+</html>
